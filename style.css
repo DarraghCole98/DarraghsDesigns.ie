@@ -35,7 +35,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .mywork, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -107,7 +107,8 @@ section .title::after{
 .navbar.sticky .logo a span{
     color: #fff;
 }
-.navbar .menu li{
+
+.navbar .menu li {
     list-style: none;
     display: inline-block;
 }
@@ -123,6 +124,10 @@ section .title::after{
     color: crimson;
 }
 .navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
+.navbar.sticky .menu ul li a:hover{
     color: #fff;
 }
 
@@ -214,7 +219,7 @@ section .title::after{
 }
 
 /* about section styling */
-.about .title::after{
+.about .title:after{
     content: "who i am";
 }
 .about .about-content .left{
@@ -258,16 +263,16 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .teams{
+.services, .mywork{
     color:#fff;
     background: #111;
 }
 .services .title::before,
-.teams .title::before{
+.mywork .title::before{
     background: #fff;
 }
 .services .title::after,
-.teams .title::after{
+.mywork .title::after{
     background: #111;
     content: "what i provide";
 }
@@ -378,11 +383,11 @@ section .title::after{
     width: 90%;
 }
 
-/* teams section styling */
-.teams .title::after{
+/* mywork section styling */
+.mywork .title::after{
     content: "my clients";
 }
-.teams .carousel .card{
+.mywork .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -390,25 +395,25 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.mywork .carousel .card:hover{
     background: crimson;
 }
-.teams .carousel .card .box{
+.mywork .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.mywork .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.mywork .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.mywork .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -416,7 +421,7 @@ section .title::after{
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.mywork .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
@@ -550,6 +555,21 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
+#home {
+
+}
+#home h2 {
+	width: 100%;
+	text-align: center;
+
+
+}
+h2 {
+
+}
+
+
+
 
 
 /* responsive media query start */
@@ -677,4 +697,33 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+
+
+.global .social{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+  padding-bottom: 0px;
+  border-top: 1px solid #eee;
+  margin-top: 50px;
+}
+.global .social a{
+  font-size: 22px;
+  width: 45px;
+  height: 45px;
+  line-height: 39px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid #05ff05;
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4);
+  margin: 10px;
+  color: #fff;
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+.global .social a:hover{
+  opacity: 0.9;
+  box-shadow: 0px 1px 3px 2px rgba(255, 255, 255, 0.9);
 }
